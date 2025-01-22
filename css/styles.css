@@ -1,0 +1,214 @@
+/*---------------------------------------------------------
+BASES
+---------------------------------------------------------*/
+
+html {
+    box-sizing: border-box;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+
+/*---------------------------------------------------------
+Générique
+---------------------------------------------------------*/
+
+.wrapper {
+    max-width: 1080px;
+    margin: 0 auto; /* ça met haut bas à 0 et left right à auto*/
+}
+
+body{ /* Les 3 du hauts sont obligatoire (margin padding font)*/
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", serif;
+
+
+    background-color: white;
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/*---------------------------------------------------------
+Components
+---------------------------------------------------------*/
+
+/*Header */
+
+header{
+    background-color: #f26c25;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header .wrapper{
+    display: flex;
+    justify-content: space-between; /* Un à gauche, l'autre à droite */
+    align-items: center;
+
+    height: 80px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo p{
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+}
+
+header ul{
+    display: flex;
+    justify-content: flex-end; /* pour les avoir au bout*/
+    gap: 40px;
+
+    list-style: none;
+}
+
+nav a{
+    color: white;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+/*Section Baniere*/
+
+.baniere{
+    background-color: #eeeeee;
+}
+
+.baniere .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.baniere h1{
+    font-size: 36px;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 7.2px;
+}
+
+/* Section Transport */
+
+.titre-section{
+    display: flex;
+    justify-content: space-between; /*horizontal*/
+    align-items: center; /* vertical*/
+
+    height: 60px;
+    background-color: #eeeeee;
+    border: 1px solid #d0d0d0;
+
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.titre-section {
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.titre-section img{
+    
+    margin-right: 20px;
+    cursor: pointer; /*Transforme la main en pointeur quand on survol. */
+}
+
+.conteneur-transport{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+
+}
+
+.conteneur-transport h3{
+    font-size: 36px;
+    font-weight: 300;
+
+    text-align: center;
+
+}
+
+.conteneur-transport p{
+    text-align: center;
+}
+
+
+/* Section Footer */
+
+footer .wrapper ul li a{
+    display: inline-block; /*permet d'avoir des propriétés blocks à des éléments inlines */
+    width: 32px;
+    height: 32px;
+
+}
+
+.facebook a{
+    background-image: url("../images/facebook-nb1.jpg");
+}
+
+.twitter a{
+    background-image: url("../images/twitter-nb1.jpg");
+}
+
+.pinterest a{
+    background-image: url("../images/pinterest-nb1.jpg");
+}
+
+.linkedin a{
+    background-image: url("../images/linkedin-nb1.jpg");
+}
+
+.facebook a:hover{
+    background-image: url("../images/facebook-survol1.jpg");
+}
+
+.twitter a:hover{
+    background-image: url("../images/twitter-survol1.jpg");
+}
+
+.pinterest a:hover{
+    background-image: url("../images/pinterest-survol1.jpg");
+}
+
+.linkedin a:hover{
+    background-image: url("../images/linkedin-survol1.jpg");
+}
+
+footer .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer{
+    background-color: black;
+    height: 70px;
+}
+
+footer h4{
+    color: white;
+    font-weight: 400;
+}
+
+footer ul{
+    display: flex;
+    list-style:  none;
+    gap: 20px;
+}
