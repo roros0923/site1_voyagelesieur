@@ -149,6 +149,15 @@ nav a:hover{
     text-align: center;
 }
 
+.col-transport-invisible {
+    display: none;
+}
+
+.transport h3{
+    font-size: 36px;
+    font-weight: normal;
+    margin: 10p 0 0;
+}
 
 /* Section Footer */
 
